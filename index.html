@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Join Now</title>
+
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=true;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1070436148885077');
+fbq('track', 'PageView');
+</script>
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg,#1a2a6c,#b21f1f,#fdbb2d);
+  background-size: 300% 300%;
+  animation: bgMove 8s infinite alternate;
+  color: white;
+  text-align: center;
+}
+
+@keyframes bgMove {
+  0% {background-position: left;}
+  100% {background-position: right;}
+}
+
+.container {
+  padding: 40px 15px;
+}
+
+.card {
+  max-width: 420px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 0 40px rgba(255,255,255,0.2);
+}
+
+.live {
+  color: #00ffcc;
+  font-size: 14px;
+  font-weight: bold;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {opacity: 0.4;}
+}
+
+h1 {
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+p {
+  color: #ddd;
+}
+
+.btn {
+  display: block;
+  margin-top: 25px;
+  padding: 16px;
+  border-radius: 40px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  background: linear-gradient(90deg,#00ffcc,#ffcc00);
+  box-shadow: 0 0 20px rgba(255,255,0,0.6);
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(255,255,0,1);
+}
+
+.features {
+  margin-top: 25px;
+  color: #eee;
+  line-height: 1.8;
+}
+
+.footer {
+  margin-top: 25px;
+  color: #aaa;
+  font-size: 12px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+  <div class="live">● LIVE NOW</div>
+
+  <h1>Join Our Premium Community</h1>
+  <p>Get instant updates & smart insights daily</p>
+
+  <a href="#" class="btn" onclick="trackAndRedirect()">
+     🚀 JOIN TELEGRAM NOW
+  </a>
+
+  <div class="features">
+    ⚡ Daily Updates <br>
+    📊 Smart Insights <br>
+    🔒 Trusted Community <br>
+    👥 100K+ Members
+  </div>
+
+  <div class="footer">© 2026</div>
+</div>
+
+</div>
+
+<script>
+function trackAndRedirect(){
+  fbq('track','Lead');
+
+  setTimeout(function(){
+    window.location.href = "https://t.me/+ZRzYQgEl9npiODg1";
+  }, 500);
+}
+</script>
+
+</body>
+</html>
